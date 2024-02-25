@@ -20,6 +20,7 @@ header {
     top: 0px;
     display: flex;
     justify-content: space-between;
+    z-index: 100;
 }
 
 .navbar-custom {
@@ -59,43 +60,6 @@ header {
     margin: 5px;
 }
 
-/* Titulo del header*/
-header div h2 {
-    font-size: 4vmin;
-    font-family: 'Cormorant Infant', serif;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
-
-/* Subtitulo del header */
-header div h3 {
-    font-size: 3vmin;
-    font-family: 'Oooh Baby', cursive;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-/* Logo del header */
-.logo-header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    height: auto;
-    max-width: 150px;
-    border-radius: 50%;
-}
-
-/* Estilo de links del header */
-.style-links-header {
-    color: white;
-    font-size: 2.5vmin;
-    margin: 0px 2vmin;
-    text-decoration: none;
-}
-
 /* Parametros basicos del main */
 main {
     text-align: justify;
@@ -105,7 +69,6 @@ main {
     background-color: #050505;
     text-align: center;
     padding: 25px 0px;
-
 }
 
 .div-boton-reservas a {
@@ -121,35 +84,6 @@ main {
     font-weight: 600;
 }
 
-/* Parametros carousel */
-#carouselExampleIndicators.carousel {
-    margin: 0;
-    height: 400px;
-    overflow: hidden;
-}
-
-#carouselExampleIndicators .carousel-inner {
-    height: 100%;
-}
-
-#carouselExampleIndicators .carousel-item {
-    height: 100%;
-}
-
-#carouselExampleIndicators .carousel-item img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
-/* Media query para Desktop */
-@media (min-width: 768px) {
-    #carouselExampleIndicators.carousel {
-        height: 600px;
-    }
-}
-
-
 /* Parametros basicos del footer */
 footer {
     background-color: #010101;
@@ -158,23 +92,31 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     overflow: hidden;
 }
 
+.footer-content-left {
+    display: flex;
+    align-items: center;
+}
 
 .footer-socials {
     display: flex;
+    flex-direction: column; /* Change flex direction to column */
     align-items: center;
-    margin: 10px;
-    padding: 10px;
-    flex-direction: column;
+    margin-right: 20px; /* Adjust margin between social media icons and map */
 }
 
+.footer-socials p {
+    margin-bottom: 5px; /* Add margin below text */
+    color: white;
+}
 
 .footer-socials a {
     display: inline-flex;
     align-items: center;
-    margin: 10px;
+    margin: 5px 10px; /* Adjust margin between social media icons */
     text-decoration: none;
     color: white;
 }
@@ -184,9 +126,9 @@ footer {
     font-size: 1.5em;
 }
 
-
 .footer-map {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin-left: auto; /* Push map to the right */
+    margin-top: 5px; /* Adjust margin-top to reduce distance from the top */
 }
