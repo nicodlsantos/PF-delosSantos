@@ -97,8 +97,36 @@ header div h3 {
 /* Parametros basicos del main */
 main {
     text-align: justify;
-    padding: 1rem;
 }
+
+/* Parametros carousel */
+#carouselExampleIndicators.carousel {
+    margin: 0;
+    height: 400px;
+    overflow: hidden;
+}
+
+#carouselExampleIndicators .carousel-inner {
+    height: 100%;
+}
+
+#carouselExampleIndicators .carousel-item {
+    height: 100%;
+}
+
+#carouselExampleIndicators .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Media query para Desktop */
+@media (min-width: 768px) {
+    #carouselExampleIndicators.carousel {
+        height: 600px;
+    }
+}
+
 
 /* Parametros basicos del footer */
 footer {
