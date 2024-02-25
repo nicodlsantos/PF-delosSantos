@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    background-color: #050505;
 }
 
 /* Parametros basicos del body*/
@@ -63,6 +64,7 @@ header {
 /* Parametros basicos del main */
 main {
     text-align: justify;
+    color: white;
 }
 
 /* Parametros carousel */
@@ -92,6 +94,29 @@ main {
         height: 600px;
     }
 }
+
+/* Servicios.html */
+.services-title {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between grid items */
+}
+
+.service {
+    text-align: center;
+}
+
+.service img {
+    width: 100%; /* Make images fill their container */
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+}
+
+
 
 .div-boton-reservas {
     background-color: #050505;
