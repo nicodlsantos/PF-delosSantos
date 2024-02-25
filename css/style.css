@@ -26,12 +26,14 @@ header {
 .navbar-custom {
     background-color: black;
 }
+
 .navbar-brand img {
     height: 100px;
     width: auto;
     border-radius: 50%;
 }
-.navbar-dark .navbar-nav .nav-link:not(.disabled):hover, 
+
+.navbar-dark .navbar-nav .nav-link:not(.disabled):hover,
 .navbar-dark .navbar-nav .nav-link:not(.disabled):focus {
     color: white !important;
 }
@@ -98,8 +100,56 @@ header div h3 {
 /* Parametros basicos del main */
 main {
     text-align: justify;
-    padding: 1rem;
 }
+
+.div-boton-reservas {
+    background-color: #050505;
+    text-align: center;
+    padding: 25px 0px;
+
+}
+
+.div-boton-reservas a {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Parametros carousel */
+#carouselExampleIndicators.carousel {
+    margin: 0;
+    height: 400px;
+    overflow: hidden;
+}
+
+#carouselExampleIndicators .carousel-inner {
+    height: 100%;
+}
+
+#carouselExampleIndicators .carousel-item {
+    height: 100%;
+}
+
+#carouselExampleIndicators .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Media query para Desktop */
+@media (min-width: 768px) {
+    #carouselExampleIndicators.carousel {
+        height: 600px;
+    }
+}
+
 
 /* Parametros basicos del footer */
 footer {
