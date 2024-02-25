@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Parametros basicos del body*/
+body {
+    background-color: #050505;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Parametros basicos del header*/
+header {
+    overflow: hidden;
+    background-color: #010101;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-custom {
+    background-color: black;
+}
+.navbar-brand img {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+.navbar-dark .navbar-nav .nav-link:not(.disabled):hover, 
+.navbar-dark .navbar-nav .nav-link:not(.disabled):focus {
+    color: white !important;
+}
+
+.items-header {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.item-one,
+.item-three {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.item-two {
+    margin: 0px 20px;
+}
+
+.title-and-logo {
+    margin: 5px;
+}
+
+/* Titulo del header*/
+header div h2 {
+    font-size: 4vmin;
+    font-family: 'Cormorant Infant', serif;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+/* Subtitulo del header */
+header div h3 {
+    font-size: 3vmin;
+    font-family: 'Oooh Baby', cursive;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Logo del header */
+.logo-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+/* Estilo de links del header */
+.style-links-header {
+    color: white;
+    font-size: 2.5vmin;
+    margin: 0px 2vmin;
+    text-decoration: none;
+}
+
+/* Parametros basicos del main */
+main {
+    text-align: justify;
+    padding: 1rem;
+}
+
+/* Parametros basicos del footer */
+footer {
+    background-color: #010101;
+    text-align: center;
+    border-top: 1px solid white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+
+.footer-socials a {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-socials a img {
+    margin-right: 5px;
+    font-size: 1.5em;
+}
+
+
+.footer-map {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
