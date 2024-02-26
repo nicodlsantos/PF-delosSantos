@@ -125,11 +125,12 @@ main {
 }
 
 .service h3 {
-    padding: 16px 0px 2px 0px;
+    padding: 16px 0px;
 }
 
 .service p {
     text-align: center;
+    padding: 8px 0px;
 }
 
 .service img {
