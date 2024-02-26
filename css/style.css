@@ -108,19 +108,48 @@ main {
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
-    gap: 20px; /* Adjust the gap between grid items */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    padding: 0px 16px;
 }
 
 .service {
     text-align: center;
+    padding: 24px;
+    width: calc(50% - 10px);
+    max-width: 500px;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+.service h3 {
+    padding: 16px 0px 2px 0px;
+}
+
+.service p {
+    text-align: center;
 }
 
 .service img {
-    width: 100%; /* Make images fill their container */
-    max-width: 100%; /* Ensure images don't exceed their container's width */
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
 }
+
+/* Media query para vista mobile de Grid */
+@media (max-width: 767px) {
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+    }
+}
+
 
 
 
@@ -128,7 +157,7 @@ main {
 .div-boton-reservas {
     background-color: #050505;
     text-align: center;
-    padding: 25px 0px;
+    padding: 32px 0px;
 }
 
 .div-boton-reservas a {
@@ -163,20 +192,20 @@ footer {
 
 .footer-socials {
     display: flex;
-    flex-direction: column; /* Change flex direction to column */
+    flex-direction: column;
     align-items: center;
-    margin-right: 20px; /* Adjust margin between social media icons and map */
+    margin-right: 20px;
 }
 
 .footer-socials p {
-    margin-bottom: 5px; /* Add margin below text */
+    margin-bottom: 5px;
     color: white;
 }
 
 .footer-socials a {
     display: inline-flex;
     align-items: center;
-    margin: 5px 10px; /* Adjust margin between social media icons */
+    margin: 5px 10px;
     text-decoration: none;
     color: white;
 }
@@ -189,6 +218,6 @@ footer {
 .footer-map {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Push map to the right */
-    margin-top: 5px; /* Adjust margin-top to reduce distance from the top */
+    margin-left: auto;
+    margin-top: 5px;
 }
