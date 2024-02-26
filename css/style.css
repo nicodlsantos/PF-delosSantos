@@ -1,20 +1,24 @@
+/* Reset Universal */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Definiciones de Fuente */
 .poppins-extralight {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
 }
 
+/* Estilos del Cuerpo */
 body {
     background-color: #050505;
     font-family: 'Poppins', sans-serif;
     color: white;
 }
 
+/* Estilos del Encabezado */
 header {
     overflow: hidden;
     background-color: #010101;
@@ -27,6 +31,7 @@ header {
     z-index: 100;
 }
 
+/* Estilos de la Barra de Navegación */
 .navbar-custom {
     background-color: black;
 }
@@ -42,28 +47,7 @@ header {
     color: white !important;
 }
 
-.items-header {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.item-one,
-.item-three {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    flex-wrap: wrap;
-}
-
-.item-two {
-    margin: 0 20px;
-}
-
-.title-and-logo {
-    margin: 5px;
-}
-
+/* Estilos del Contenido Principal */
 main {
     text-align: justify;
     color: white;
@@ -83,6 +67,7 @@ main div h2 {
     background-color: #050505;
 }
 
+/* Estilos del Carrusel */
 #carouselExampleIndicators.carousel {
     margin: 0;
     height: 400px;
@@ -106,6 +91,7 @@ main div h2 {
     }
 }
 
+/* Estilos de la Sección de Servicios */
 .services-title {
     text-align: center;
     padding: 24px 0 8px 0;
@@ -154,6 +140,7 @@ main div h2 {
     }
 }
 
+/* Estilos de Botones */
 .div-boton-reservas {
     background-color: #050505;
     text-align: center;
@@ -173,6 +160,7 @@ main div h2 {
     font-weight: 600;
 }
 
+/* Estilos del Pie de Página */
 footer {
     background-color: #010101;
     text-align: center;
