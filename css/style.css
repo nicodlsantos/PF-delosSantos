@@ -1,29 +1,27 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .poppins-extralight {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
-  }
-  
-/* Parametros basicos del body*/
+}
+
 body {
     background-color: #050505;
     font-family: 'Poppins', sans-serif;
     color: white;
 }
 
-/* Parametros basicos del header*/
 header {
     overflow: hidden;
     background-color: #010101;
     padding: 10px;
     border-bottom: 1px solid white;
     position: sticky;
-    top: 0px;
+    top: 0;
     display: flex;
     justify-content: space-between;
     z-index: 100;
@@ -59,14 +57,13 @@ header {
 }
 
 .item-two {
-    margin: 0px 20px;
+    margin: 0 20px;
 }
 
 .title-and-logo {
     margin: 5px;
 }
 
-/* Parametros basicos del main */
 main {
     text-align: justify;
     color: white;
@@ -78,24 +75,20 @@ main div img {
     max-height: 600px;
     overflow: hidden;
     object-fit: cover;
-    padding: 24px 0px;
+    padding: 24px 0;
 }
 
 main div h2 {
-    margin: 8px 0px 4px 0px;
+    margin: 8px 0 4px 0;
 }
 
-/* Parametros carousel */
 #carouselExampleIndicators.carousel {
     margin: 0;
     height: 400px;
     overflow: hidden;
 }
 
-#carouselExampleIndicators .carousel-inner {
-    height: 100%;
-}
-
+#carouselExampleIndicators .carousel-inner,
 #carouselExampleIndicators .carousel-item {
     height: 100%;
 }
@@ -106,17 +99,15 @@ main div h2 {
     width: 100%;
 }
 
-/* Media query para Desktop */
 @media (min-width: 768px) {
     #carouselExampleIndicators.carousel {
         height: 600px;
     }
 }
 
-/* Servicios.html */
 .services-title {
     text-align: center;
-    padding: 24px 0px 8px 0px;
+    padding: 24px 0 8px 0;
 }
 
 .services-grid {
@@ -124,7 +115,7 @@ main div h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
-    padding: 16px 16px 0px 16px;
+    padding: 16px;
 }
 
 .service {
@@ -137,12 +128,12 @@ main div h2 {
 }
 
 .service h3 {
-    padding: 16px 0px;
+    padding: 16px 0;
 }
 
 .service p {
     text-align: center;
-    padding: 8px 0px;
+    padding: 8px 0;
 }
 
 .service img {
@@ -151,8 +142,6 @@ main div h2 {
     border-radius: 8px;
 }
 
-
-/* Media query para vista mobile de Grid */
 @media (max-width: 767px) {
     .services-grid {
         flex-direction: column;
@@ -164,11 +153,10 @@ main div h2 {
     }
 }
 
-
 .div-boton-reservas {
     background-color: #050505;
     text-align: center;
-    padding: 32px 0px;
+    padding: 32px 0;
 }
 
 .div-boton-reservas a {
@@ -184,7 +172,6 @@ main div h2 {
     font-weight: 600;
 }
 
-/* Parametros basicos del footer */
 footer {
     background-color: #010101;
     text-align: center;
