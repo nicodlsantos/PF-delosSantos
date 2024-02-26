@@ -116,7 +116,16 @@ main div h2 {
     justify-content: center;
     gap: 32px;
     padding: 16px;
-}
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .services-grid.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 
 .service {
     text-align: center;

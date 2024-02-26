@@ -62,13 +62,13 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </header>
-    
+
     <main>
         <div>
             <h2 class="services-title">Curso inicial de Extensiones de Pestañas</h2>
             <img src="../assets/tablet-curso.JPG" alt="">
         </div>
-        <div class="services-grid">
+        <div class="services-grid" id="servicesGrid">
             <div class="service">
                 <h3>Adentrate en el mundo de las pestañas</h3>
                 <p>Bienvenidos al curso de introducción a las extensiones de pestañas. En este programa, exploraremos de
@@ -100,7 +100,7 @@
                 </ul>
             </div>
         </div>
-        <div class="services-grid">
+        <div class="services-grid" id="servicesGrid">
             <div class="service">
                 <h3>Trabajos de alumnas</h3>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -131,8 +131,13 @@
                 </div>
             </div>
         </div>
-        
 
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var servicesGrid = document.getElementById('servicesGrid');
+                servicesGrid.classList.add('visible');
+            });
+        </script>
     </main>
 
     <!-- Boton de reservas -->

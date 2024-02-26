@@ -65,7 +65,7 @@
 
     <main>
         <h2 class="services-title">Nuestros servicios</h2>
-        <div class="services-grid">
+        <div class="services-grid" id="servicesGrid">
             <!-- Service 1 -->
             <div class="service">
                 <img src="../assets/trabajo-1.jpg" alt="Pestañas Efecto Rimmer">
@@ -95,6 +95,12 @@
                     El lifting NO requiere de mantenimiento! Duración 6 a 8 semanas</p>
             </div>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var servicesGrid = document.getElementById('servicesGrid');
+                servicesGrid.classList.add('visible');
+            });
+        </script>
     </main>
 
 
