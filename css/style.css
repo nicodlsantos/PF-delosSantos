@@ -91,13 +91,15 @@ main div h2 {
     }
 }
 
-/* Estilos de la Sección de Servicios */
-.services-title {
+/* Estilos de las tarjetas en Servicios, Cursos, Trabajos e Información */
+.page-title {
     text-align: center;
-    padding: 24px 0 8px 0;
+    padding: 24px 0px 8px 0px;
+    font-weight: 600;
+    font-size: 32px;
 }
 
-.services-grid {
+.cards-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,7 +107,7 @@ main div h2 {
     padding: 16px;
 }
 
-.service {
+.cards {
     text-align: center;
     padding: 24px;
     width: calc(50% - 10px);
@@ -114,33 +116,33 @@ main div h2 {
     border-radius: 10px;
 }
 
-.service h3 {
+.cards h3 {
     padding: 16px 0;
 }
 
-.service p {
+.cards p {
     text-align: center;
     padding: 8px 0;
 }
 
-.service img {
+.cards img {
     width: 100%;
     max-width: 100%;
     border-radius: 8px;
 }
 
 @media (max-width: 767px) {
-    .services-grid {
+    .cards-grid {
         flex-direction: column;
         align-items: center;
     }
 
-    .service {
+    .cards {
         width: 100%;
     }
 }
 
-/* Estilos de Botones */
+/* Estilos de botones de reserva */
 .div-boton-reservas {
     background-color: #050505;
     text-align: center;
@@ -172,11 +174,6 @@ footer {
     overflow: hidden;
 }
 
-.footer-content-left {
-    display: flex;
-    align-items: center;
-}
-
 .footer-socials {
     display: flex;
     flex-direction: column;
@@ -200,11 +197,4 @@ footer {
 .footer-socials a img {
     margin-right: 5px;
     font-size: 1.5em;
-}
-
-.footer-map {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-top: 5px;
 }
