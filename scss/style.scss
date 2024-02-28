@@ -1,23 +1,23 @@
-// Reset Universal
+/* Reset Universal */
 * {
   margin: 0;
   padding: 0;
 }
 
-// Definiciones de Fuente
+/* Definiciones de Fuente */
 .poppins-extralight {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
 }
 
-// Estilos del Cuerpo
+/* Estilos del Cuerpo */
 body {
   background-color: #050505;
   font-family: 'Poppins', sans-serif;
   color: white;
 
-  // Estilos del Encabezado
+  /* Estilos del Encabezado */
   header {
     overflow: hidden;
     background-color: #010101;
@@ -31,7 +31,7 @@ body {
   }
 }
 
-// Estilos de la Barra de Navegación
+/* Estilos de la Barra de Navegación */
 .navbar-custom {
   background-color: black;
 
@@ -47,7 +47,7 @@ body {
   }
 }
 
-// Estilos del Contenido Principal
+/* Estilos del Contenido Principal */
 main {
   text-align: justify;
   color: white;
@@ -69,7 +69,7 @@ main {
   }
 }
 
-// Estilos del Carrusel
+/* Estilos del Carrusel */
 #carouselExampleIndicators.carousel {
   margin: 0;
   height: 400px;
@@ -91,7 +91,7 @@ main {
   }
 }
 
-// Estilos de las tarjetas en Servicios, Cursos, Trabajos e Información
+/* Estilos de las tarjetas en Servicios, Cursos, Trabajos e Información */
 .page-title {
   text-align: center;
   padding: 24px 0px 8px 0px;
@@ -140,7 +140,7 @@ main {
   }
 }
 
-// Estilos de botones de reserva
+/* Estilos de botones de reserva */
 .div-boton-reservas {
   background-color: #050505;
   text-align: center;
@@ -160,7 +160,7 @@ main {
   }
 }
 
-// Estilos del Pie de Página
+/* Estilos del Pie de Página */
 footer {
   background-color: #010101;
   text-align: center;
