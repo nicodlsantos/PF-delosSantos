@@ -1,5 +1,3 @@
-// Funcion para detectar visibilidad de .cards
-
 document.addEventListener('DOMContentLoaded', function() {
     const cards = document.querySelectorAll('.cards');
 
