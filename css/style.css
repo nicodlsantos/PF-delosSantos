@@ -108,6 +108,7 @@ main div h2 {
 }
 
 .cards {
+    background-color: #010101;
     text-align: center;
     padding: 24px;
     width: calc(50% - 10px);
