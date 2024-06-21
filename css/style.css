@@ -152,23 +152,8 @@ h4 {
 }
 
 /* Estilos de botones de reserva */
-.div-boton-reservas {
-    background-color: #050505;
-    text-align: center;
-    padding: 32px 0;
-}
-
-.div-boton-reservas a {
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    color: black;
-    padding: 8px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 600;
+.reserve-btn-grid button {
+    margin: 0px 12px;
 }
 
 /* Estilos del Pie de Página */
