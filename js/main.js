@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         agenda.push(newReservation);
         localStorage.setItem('agenda', JSON.stringify(agenda));
 
-        alert('Reserva guardada con éxito!');
+        showModal('Reserva guardada con éxito!');
         showMainButtons();
     }
 
@@ -122,9 +122,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (index > -1) {
             agenda.splice(index, 1);
             localStorage.setItem('agenda', JSON.stringify(agenda));
-            alert('Reserva cancelada con éxito!');
+            showModal('Reserva cancelada con éxito!');
             showMainButtons();
         }
+    }
+
+    function showModal(message) {
+        const modalBody = document.getElementById('modal-body');
+        modalBody.textContent = message;
+        $('#myModal').modal('show');
     }
 
     showMainButtons();

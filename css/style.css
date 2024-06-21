@@ -156,6 +156,18 @@ h4 {
     margin: 0px 12px;
 }
 
+/* Estilos de modal */
+.modal-content {
+    background-color: #000;
+    color: #fff;
+}
+.modal-header, .modal-footer {
+    border-color: #444;
+}
+.modal-title {
+    color: white;
+}
+
 /* Estilos del Pie de Página */
 footer {
     background-color: #010101;
