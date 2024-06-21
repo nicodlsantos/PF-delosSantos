@@ -1,1 +1,11 @@
 js/jquery-3.7.1.min.js
+/functions
+.firebase
+.github
+/public
+.firebaserc
+firestore.indexes.json
+firebase.json
+firestore.rules
+database.rules.json
+y

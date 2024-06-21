@@ -13,31 +13,37 @@ document.addEventListener('DOMContentLoaded', () => {
     function showReservationForm() {
         cards.innerHTML = `
             <h3>Crear Reserva</h3>
-            <form id="reservation-form">
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" required>
-                </div>
-                <div class="form-group">
-                    <label for="fecha">Fecha</label>
-                    <input type="date" class="form-control" id="fecha" required>
-                </div>
-                <div class="form-group">
-                    <label for="hora">Hora</label>
-                    <input type="time" class="form-control" id="hora" required>
-                </div>
-                <button type="submit" class="reserve-button btn btn-light btn-lg">Guardar Reserva</button>
-                <button type="button" class="reserve-button btn btn-light btn-lg" id="btn-atras">Atrás</button>
-            </form>
+            <div id="reservation-form-content">
+                <form id="reservation-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" class="form-control" id="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hora">Hora</label>
+                        <input type="time" class="form-control" id="hora" required>
+                    </div>
+                    <div class="reserve-btn-grid">
+                        <button type="submit" class="reserve-button btn btn-light btn-lg">Guardar Reserva</button>
+                        <button type="button" class="reserve-button btn btn-light btn-lg" id="btn-atras">Atrás</button>
+                    </div>
+                </form>
+            </div>
+            <div id="reservation-info"></div>
         `;
-
+    
         document.getElementById('reservation-form').addEventListener('submit', saveReservation);
         document.getElementById('btn-atras').addEventListener('click', showMainButtons);
     }
+    
 
     function showConsultForm() {
         cards.innerHTML = `
@@ -93,20 +99,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function consultReservation(event) {
         event.preventDefault();
-
+    
         const nombre = document.getElementById('consult-nombre').value;
         const apellido = document.getElementById('consult-apellido').value;
-
+    
         const userReservations = agenda.filter(reservation => reservation.nombre === nombre && reservation.apellido === apellido);
-
+    
         const resultDiv = document.getElementById('consult-result');
         resultDiv.innerHTML = '';
-
+    
         if (userReservations.length > 0) {
             userReservations.forEach((reservation, index) => {
                 const reservationDiv = document.createElement('div');
                 reservationDiv.innerHTML = `
-                    <p>${reservation.fecha} a las ${reservation.hora}</p>
+                    <p>${reservation.nombre} ${reservation.apellido}, tienes una reserva el día ${reservation.fecha} a las ${reservation.hora} hs.</p>
                     <button type="button" class="btn btn-danger" data-index="${index}">Cancelar</button>
                 `;
                 resultDiv.appendChild(reservationDiv);
@@ -116,6 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
             resultDiv.innerHTML = '<p>No se encontraron reservas.</p>';
         }
     }
+    
+    
 
     function cancelReservation(reservationToCancel) {
         const index = agenda.findIndex(reservation => reservation.nombre === reservationToCancel.nombre && reservation.apellido === reservationToCancel.apellido && reservation.fecha === reservationToCancel.fecha && reservation.hora === reservationToCancel.hora);
